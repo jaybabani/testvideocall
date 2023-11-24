@@ -4,7 +4,7 @@ const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "http://154.56.60.141:3000",
+		origin: "https://www.earnchatpromo.io:3000",
 		methods: [ "GET", "POST" ]
 	}
 })
