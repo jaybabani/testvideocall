@@ -8,7 +8,9 @@ import "./App.css"
 // import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const socket = io.connect('https://www.earnchatpromo.io:5000')
+// const socket = io.connect('https://www.earnchatpromo.io:5000')
+const socket = io.connect('http://154.56.60.141:5000')
+
 function App() {
 
 	// const location = useLocation();
@@ -19,7 +21,8 @@ function App() {
 
 	// const baseUrl = 'http://localhost:3000';
 	// const baseUrl = 'http://154.56.60.141:3000';
-	const baseUrl = 'https://www.earnchatpromo.io:3000';
+	// const baseUrl = 'https://www.earnchatpromo.io:3000';
+	const baseUrl = 'https://www.earnchatpromo.io';
 	
 
 	const [me, setMe] = useState("")
