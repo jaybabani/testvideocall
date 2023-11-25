@@ -9,6 +9,10 @@ const io = require("socket.io")(server, {
 	}
 })
 
+app.get("/", (req,res) => {
+	res.send("working");
+});
+
 io.on("connection", (socket) => {
 	socket.emit("me", socket.id)
 
